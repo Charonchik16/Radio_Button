@@ -1,0 +1,35 @@
+﻿<Window x:Class="Radio_button.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Radio_button"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock FontSize="30" FontStyle="Italic" HorizontalAlignment="Center"  VerticalAlignment="Top">
+            Тест
+        </TextBlock>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,40,0,0" Width="auto" FontSize="22" FontStyle="Oblique"> 
+            Вопрос 1
+        </TextBlock>
+        <TextBlock Margin="10,80, 0 ,0" FontSize="22">
+            Какой язык является предвестником cs?
+        </TextBlock>
+        <RadioButton Margin="10,115, 0 , 0"  Checked="Radio_Button" IsChecked="False"  Content="СS" Name="CS">
+
+        </RadioButton>
+        <RadioButton Margin="10,140, 0 , 0" Checked="Radio_Button" Name="xaml" Content="xaml" IsChecked="False" >
+        </RadioButton>
+        <RadioButton Margin="10,165, 0 , 0" Checked="Radio_Button" Content="Cpp " IsChecked="False" Name="cpp">
+        </RadioButton>
+        <RadioButton Margin="10,190, 0 , 0" Checked="Radio_Button" Content="C" IsChecked="False" Name="C" >
+        </RadioButton>
+        <RadioButton Margin="10,210, 0 , 0" Checked="Radio_Button" Content="Config" IsChecked="False" Name="Config">
+        </RadioButton>
+        <Button Margin="0,254,0,139" Content="Проверить ответы " Click="Button_Click" />
+
+
+    </Grid>
+
+</Window>
